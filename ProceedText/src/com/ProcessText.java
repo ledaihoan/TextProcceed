@@ -257,7 +257,7 @@ public class ProcessText {
             
             f3.append(line + " = " + probOfLine + "\n");
             countItem += arr.length;
-            totalProb -= (Math.log(probOfLine)/Math.log(2))*arr.length;
+            totalProb -= (Math.log(probOfLine)/Math.log(2));
         }
         double somu = totalProb/countItem;
         double perplexity = Math.pow(2, somu);
