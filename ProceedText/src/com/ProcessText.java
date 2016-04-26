@@ -27,7 +27,7 @@ public class ProcessText {
         HashMap<String,Integer> unigram = new HashMap<>();
         HashMap<String,Integer> bigram = new HashMap<>();
         HashMap<String,Integer> trigram = new HashMap<>();
-        BufferedReader br = new BufferedReader(new FileReader("D:/phrases"));
+        BufferedReader br = new BufferedReader(new FileReader("D:/phrases90"));
         String line;
         Analyzer biAnalyzer = new NGramTokenBaseAnalyzer(2,2,false);
         Analyzer triAnalyzer = new NGramTokenBaseAnalyzer(3,3,false);
